@@ -12,7 +12,7 @@
       href="./assets/images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Age calculator app</title>
+    <title>How old are you?</title>
 
     <style>
       .attribution {
@@ -28,18 +28,18 @@
     <div class="container">
       <div class="main-counter">
         <div>
-          <label>Day</label
-          ><input type="number" placeholder="DD" id="day-input" />
+          <label id="year-label">Year</label
+          ><input type="number" placeholder="YYYY" id="year-input" />
         </div>
         <div>
-          <label>Month</label
+          <label id="month-label">Month</label
           ><input type="number" placeholder="MM" id="month-input" />
         </div>
         <div>
-          <label>Year</label
-          ><input type="number" placeholder="YYYY" id="year-input" />
+          <label id="day-label">Day</label
+          ><input type="number" placeholder="DD" id="day-input" />
         </div>
-        <img src="assets/images/icon-arrow.png" alt="arrow" />
+        <img id="button" src="assets/images/icon-arrow.png" alt="arrow" />
       </div>
 
       <div class="break-line">
@@ -51,11 +51,11 @@
           <a class="years-counter">--</a>
           <h1>years</h1>
         </div>
-        <div class="timer-display">
+        <div>
           <a class="months-counter">--</a>
           <h1>months</h1>
         </div>
-        <div class="timer-display">
+        <div>
           <a class="days-counter">--</a>
           <h1>days</h1>
         </div>
@@ -68,5 +68,6 @@
       >. Coded by
       <a href="https://github.com/october-and-april">october-and-april</a>.
     </div>
+    <script src="script.js"></script>
   </body>
 </html>

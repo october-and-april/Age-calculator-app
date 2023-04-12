@@ -32,10 +32,13 @@ body {
   background-color: var(--white);
   padding: 3rem;
   border-radius: 1rem 1rem 6rem 1rem;
+  flex-wrap: wrap;
+
 }
 .main-counter {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 .main-counter div {
   display: flex;
@@ -70,6 +73,9 @@ input {
   top: 4.2rem;
   left: 1rem;
 }
+#button:hover{
+  cursor: pointer;
+}
 hr {
   background-color: var(--light-grey);
   height: 0.1rem;
@@ -90,6 +96,8 @@ hr {
   color: var(--purple);
   font-size: 5rem;
   font-weight: 800;
+    font-style: italic;
+
 }
 .timer h1 {
   font-size: 5rem;
