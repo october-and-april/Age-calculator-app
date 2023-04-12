@@ -21,6 +21,12 @@ function validateYear() {
   if (birtyYearValue > CURRENT_YEAR) {
     yearLabel.style.color = "red";
     birtyYear.style.border = "1.5px solid red";
+    const newInputYear = document.querySelector(".years-counter");
+    newInputYear.innerHTML = '--';
+    const newInputMonth = document.querySelector(".months-counter");
+    newInputMonth.innerHTML = '--';
+    const newInputDay = document.querySelector(".days-counter");
+    newInputDay.innerHTML = '--';
   } else {
     yearLabel.style.color = "";
     birtyYear.style.border = "";
@@ -34,6 +40,12 @@ function validateMonth() {
   if (birthMonthValue > MAX_MONTH || birthMonthValue <= 0) {
     monthLabel.style.color = "red";
     birthMonth.style.border = "1.5px solid red";
+    const newInputYear = document.querySelector(".years-counter");
+    newInputYear.innerHTML = '--';
+    const newInputMonth = document.querySelector(".months-counter");
+    newInputMonth.innerHTML = '--';
+    const newInputDay = document.querySelector(".days-counter");
+    newInputDay.innerHTML = '--';
   } else {
     monthLabel.style.color = "";
     birthMonth.style.border = "";
@@ -47,6 +59,12 @@ function validateDay() {
   if (birthDayValue > MAX_ODD_DAY || birthDayValue <= 0) {
     dayLabel.style.color = "red";
     birthDay.style.border = "1.5px solid red";
+    const newInputYear = document.querySelector(".years-counter");
+    newInputYear.innerHTML = '--';
+    const newInputMonth = document.querySelector(".months-counter");
+    newInputMonth.innerHTML = '--';
+    const newInputDay = document.querySelector(".days-counter");
+    newInputDay.innerHTML = '--';
   } else {
     dayLabel.style.color = "";
     birthDay.style.border = "";
